@@ -1,0 +1,107 @@
+08-17-2014 @ 14:41:09 - Requesting token for order #7529 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-7529]]></reference>
+  <sender>
+    <name><![CDATA[patricia recieire santos pereira reccieire]]></name>
+    <email><![CDATA[pareccieire@hotmail.com]]></email>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>46385235</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Ru Ipaumirim numero 100]]></street>
+      <complement><![CDATA[casa 03]]></complement>
+      <postalCode>08555200</postalCode>
+      <city><![CDATA[Poá]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>16.50</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Kit Anestésico para sobrancelhas, Olhos e Boca. 20gr]]></description>
+      <amount>150.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://elianagiaretta.com.br/concluir/order-received/7529?key=wc_order_53f0e91171620]]></redirectURL>
+  <notificationURL><![CDATA[http://elianagiaretta.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+08-17-2014 @ 14:41:10 - PagSeguro Payment Token created with success! The Token is: FDB5C9096B6BC3977482BFBF815028BE
+08-17-2014 @ 14:43:25 - Checking IPN request...
+08-17-2014 @ 14:43:26 - PagSeguro IPN is valid! The return is: SimpleXMLElement Object
+(
+    [date] => 2014-08-17T14:41:33.000-03:00
+    [code] => 543FCD2C-23BE-41DC-948A-D4653CF1C1E1
+    [reference] => WC-7529
+    [type] => 1
+    [status] => 7
+    [cancellationSource] => INTERNAL
+    [lastEventDate] => 2014-08-17T14:43:23.000-03:00
+    [paymentMethod] => SimpleXMLElement Object
+        (
+            [type] => 1
+            [code] => 102
+        )
+
+    [grossAmount] => 166.50
+    [discountAmount] => 0.00
+    [feeAmount] => 13.54
+    [netAmount] => 152.96
+    [extraAmount] => 0.00
+    [installmentCount] => 2
+    [itemCount] => 1
+    [items] => SimpleXMLElement Object
+        (
+            [item] => SimpleXMLElement Object
+                (
+                    [id] => 1
+                    [description] => Kit Anestésico para sobrancelhas, Olhos e Boca. 20gr
+                    [quantity] => 1
+                    [amount] => 150.00
+                )
+
+        )
+
+    [sender] => SimpleXMLElement Object
+        (
+            [name] => patricia recieire santos pereira reccieire
+            [email] => pareccieire@hotmail.com
+            [phone] => SimpleXMLElement Object
+                (
+                    [areaCode] => 11
+                    [number] => 46385235
+                )
+
+        )
+
+    [shipping] => SimpleXMLElement Object
+        (
+            [address] => SimpleXMLElement Object
+                (
+                    [street] => RUA IPAUMIRIM
+                    [number] => 100
+                    [complement] => casa 03
+                    [district] => Jardim Violeta
+                    [city] => POA
+                    [state] => SP
+                    [country] => BRA
+                    [postalCode] => 08555200
+                )
+
+            [type] => 3
+            [cost] => 16.50
+        )
+
+)
+
+08-17-2014 @ 14:43:26 - PagSeguro payment status for order #7529 is: 7
